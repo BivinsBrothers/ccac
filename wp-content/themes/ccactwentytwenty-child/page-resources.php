@@ -1,18 +1,6 @@
 <?php get_header(); ?>
 
-<div id="top" class="hero hero--int">
-    <div class="hero-wrap hero-wrap--int">
-        <div class="w-layout-grid grid-hero grid-hero--int">
-            <div id="w-node-502427ebeff9-93a48354" class="txt-align-rt txt-align-rt--int">
-                <h1 class="txt-hero"><?php echo get_field( 'hero_block_title' ); ?></h1>
-                <p class="subhead"><?php echo get_field( 'hero_block_subtitle' ); ?></p>
-            </div>
-        </div>
-        <div class="overlay-brdr overlay-brdr--int"></div>
-        <img src="<?php echo PG_Image::getUrl( get_field( 'hero_block_image' ), 'large' ) ?>" alt="" class="img-bg">
-        <div class="grad-hero grad-hero--int"></div>
-    </div>
-</div>
+<?php get_template_part('template-parts/hero/hero-template-part'); ?>
 
 <div class="section">
     <div class="container">
