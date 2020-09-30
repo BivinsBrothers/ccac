@@ -1,0 +1,337 @@
+/*
+Theme Name: CCAC 2020 Child Theme
+Theme URI:
+description: CCAC 2020 Child Theme
+Author: John Doe
+Author URI: http://example.com
+Template: ccactwentytwenty
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: ccac-2020-child
+*/
+
+/* COLORS  */
+.grad-3 {
+  background-image: linear-gradient(142deg, rgba(13, 49, 73, 0.7) 38%, rgba(80, 16, 71, 0.8));
+}
+
+.btn.btn--rev {
+  margin-left: 20%;
+}
+
+.txt-nav {
+  font-size: 3.0vh;
+}
+
+/* PAGINATION  */
+#wp_pagination {
+  text-align: center;
+  display: block;
+}
+.first.page.button,
+.previous.page.button,
+.page.button {
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* HIDE/SHOW STYLES */
+.js-to_expand[aria-hidden=true],
+.js-to_expand[data-hidden=true] {
+  display: none;
+}
+
+.expandmore__button {
+  background: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+.expandmore__button[aria-expanded=false] > .expandmore__symbol:before,
+.expandmore__button[data-expanded=false] > .expandmore__symbol:before{
+  content : '+ ';
+}
+.expandmore__button[aria-expanded=true] > .expandmore__symbol:before,
+.expandmore__button[data-expanded=true] > .expandmore__symbol:before{
+  content : '− ';
+}
+
+.section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+/* EVENTS PAGES */
+#tribe-events-pg-template, .tribe-events-pg-template {
+  padding: 0 20px;
+}
+
+.grid-event-template {
+  grid-template-columns: 25% 1fr; 
+}
+
+.bb-event-content {
+  overflow: auto;
+}
+
+@media screen and (max-width: 799px) {
+  .grid-event-template {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* EVENTS TAG BLOCK */
+.event-tag-wrapper {
+  padding-left: 0;
+}
+
+.tribe-common .date-wrap {
+  padding: 5px;
+}
+
+.event-tag-wrapper li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 2px 4px;
+  font-size: 12px; 
+}
+
+.tribe-common article {
+  display: grid;
+}
+
+.icon-event {
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-row {
+  margin-left: 0;
+}
+
+.container .tribe-events .tribe-events-l-container {
+  padding: 96px 0;
+}
+
+.head-cal a {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-details {
+  width: 100%;
+}
+
+.tribe-common .tribe-common-l-container {
+  max-width: 100%;
+}
+
+.tribe-venue,
+.tribe-venue-location,
+dd {
+  margin-left: 0;
+}
+
+.tribe-events-address a {
+  display: block;
+}
+
+.tribe-events-meta-group-organizer {
+  padding: 0 4%;
+}
+
+.tribe-events-event-meta .column, 
+.tribe-events-event-meta .tribe-events-meta-group {
+  /* padding: 0; */
+  width: 100%;
+}
+
+.tribe-events-content {
+  width: auto;
+}
+
+
+.event-wrap--separator {
+  background-color: white;
+  border-top: 1px solid #d5d5d5!important;
+  border-bottom: 1px solid #d5d5d5!important;
+}
+
+/* EVENT PAGE HEADINGS */
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h4--min-medium {
+  line-height: .7;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-title {
+  margin-bottom: 20px;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-description {
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.tribe-common .tribe-common-c-btn-border, .tribe-common a.tribe-common-c-btn-border {
+  border-radius: 0;
+  text-transform: uppercase;
+  border-color: #05252d;
+  font-family: Roboto;
+  color: #05252d;
+}
+
+.icon-event.icon-event--template {
+  position: absolute;
+  z-index: -1;
+}
+
+.event-tag-wrapper {
+  margin-top: 4%;
+}
+/* THE COMMUNITY FORM  */
+.tribe-dropdown .select2-selection--single .select2-selection__rendered, 
+.tribe-ea-dropdown .select2-selection--single .select2-selection__rendered,
+.tribe-community-events input[type=text] {
+  width: 300px;
+}
+
+.tribe-community-events-content {
+  width: 80%!important;
+}
+
+/* UNDOING THE .TRIBE-EVENTS CLASS  */
+.tribe-events .container {
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+.tribe-events .event-wrap {
+  padding-top: 3%!important;
+  padding-bottom: 3%!important;
+}
+
+.tribe-community-events {
+  padding: 60px 0!important;
+  
+}
+
+/* FONT CHANGES */
+.h1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+  /* margin-bottom: 10px; */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 35px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.h1-brdr {
+  font-size: 48px;
+  margin: 0.67em 0;
+  line-height: 1.32
+}
+
+.h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.h2.mb-40 {
+  margin-bottom: 40px;
+}
+
+.wp-block-columns {
+  column-gap: 3%;
+}
+.wp-block-column:not(:first-child) {
+  margin-left: auto;
+}
+
+/* LAYOUT FOR RESOURCES PAGE  */
+.grid-resource ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-column-start: span 2;
+  grid-column-end: span 2;
+  grid-row-start: span 1;
+  grid-row-start: span 1;
+}
+/* FOOTER */
+.footer {
+  padding-top: 2%;
+}
+
+.flx-vlt,
+.flx-sb {
+  justify-self: stretch!important;
+}
+.grid-foot-2 {
+  grid-column-gap: 30px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-foot-2 {
+    grid-column-gap: 30px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+
+  }
+}
+
+#w-node-05063a10caf9-3a10cac3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+/* FORMIDABLE INPUT STYLES  */
+.with_frm_style input[type=text], .with_frm_style input[type=password], .with_frm_style input[type=email], .with_frm_style input[type=number], .with_frm_style input[type=url], .with_frm_style input[type=tel], .with_frm_style input[type=phone], .with_frm_style input[type=search], .with_frm_style select, .with_frm_style textarea, .frm_form_fields_style, .with_frm_style .frm_scroll_box .frm_opt_container, .frm_form_fields_active_style, .frm_form_fields_error_style, .with_frm_style .frm-card-element.StripeElement, .with_frm_style .chosen-container-multi .chosen-choices, .with_frm_style .chosen-container-single .chosen-single {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.with_frm_style textarea {
+  border: 1px solid black;
+}
+
+/* fucking shameful magic numbers:  */
+
+
+.frm_primary_label,
+.with_frm_style select {
+  font-family: Roboto, sans-serif!important;
+  font-size: 14px!important;
+}
+
+.frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):focus,
+.frm_style_formidable-style.with_frm_style select:focus {
+  background-color: transparent;
+  border-color: none;
+  box-shadow: none;
+}
+
+.txt-field {
+  padding-top: 0px;
+  padding-bottom: 0px; 
+}
+
+.txt-field.text-field--footer {
+  margin-bottom: 8px!important;
+  height: 32px!important;
+}
