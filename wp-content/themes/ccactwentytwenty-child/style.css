@@ -2,7 +2,7 @@
 Theme Name: CCAC 2020 Child Theme
 Theme URI:
 description: CCAC 2020 Child Theme
-Author: Michael Bivins
+Author: Matthew Bivins
 Author URI: http://example.com
 Template: ccactwentytwenty
 Version: 1.0.0
@@ -68,7 +68,7 @@ Text Domain: ccac-2020-child
 }
 
 .grid-event-template {
-  grid-template-columns: 25% 1fr; 
+  grid-template-columns: 25% 1fr;
 }
 
 .bb-event-content {
@@ -95,7 +95,7 @@ Text Domain: ccac-2020-child
   margin-right: 10px;
   border: 1px solid black;
   padding: 2px 4px;
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 .tribe-common article {
@@ -143,7 +143,7 @@ dd {
   padding: 0 4%;
 }
 
-.tribe-events-event-meta .column, 
+.tribe-events-event-meta .column,
 .tribe-events-event-meta .tribe-events-meta-group {
   /* padding: 0; */
   width: 100%;
@@ -189,7 +189,7 @@ dd {
   margin-top: 4%;
 }
 /* THE COMMUNITY FORM  */
-.tribe-dropdown .select2-selection--single .select2-selection__rendered, 
+.tribe-dropdown .select2-selection--single .select2-selection__rendered,
 .tribe-ea-dropdown .select2-selection--single .select2-selection__rendered,
 .tribe-community-events input[type=text] {
   width: 300px;
@@ -211,7 +211,7 @@ dd {
 
 .tribe-community-events {
   padding: 60px 0!important;
-  
+
 }
 
 /* FONT CHANGES */
@@ -328,7 +328,7 @@ dd {
 
 .txt-field {
   padding-top: 0px;
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
 }
 
 .txt-field.text-field--footer {
